@@ -12,9 +12,17 @@
       <th>Nombre</th>
       <th>Descripcion</th>
       <th>Precio</th>
-      <th>Stock</th>
-      <th>Tienda</th>      
+      <th>Stock</th>  
     </tr>
+    @foreach($listado as $producto)
+    <tr>
+      <th>{{$producto->id}}</th>
+      <th>{{$producto->name}}</th>
+      <th>{{$producto->description}}</th>
+      <th>{{$producto->price}}</th>
+      <th>{{$producto->stock}}</th>    
+    </tr>
+    @endforeach
   </table>
 
 @endsection
