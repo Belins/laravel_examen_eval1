@@ -13,10 +13,10 @@
             </div>
 
             <div class="links">
-                <a href="">Menu</a>
+                <a href="{{route('home')}}">Menu</a>
                 <a href="git">git</a>
-                <a href="">Crear tienda</a>
-                <a href="/productos/index">Listado de productos</a>
+                <a href="{{route('tiendas.create')}}">Crear tienda</a>
+                <a href="{{route('productos.index')}}">Listado de productos</a>
 
             </div>
             <hr><br><br>
