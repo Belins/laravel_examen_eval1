@@ -19,8 +19,8 @@ class CreateProductosTable extends Migration
             $table->string('description');
             $table->integer('stock');
             $table->double('price');
-            //$table->integer('id_tienda');
-            $table->timestamps();
+            $table->unsignedBigInteger('tienda_id');
+            $table->foreign('tienda_id')->references('id')->on('tiendas');
         });
     }
 

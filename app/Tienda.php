@@ -6,5 +6,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class Tienda extends Model
 {
-    //return $this->hasOne('App\Producto', 'id', 'id_tienda');
+	public function producto(){
+		return $this->hasMany('App\Producto');
+	}
 }
